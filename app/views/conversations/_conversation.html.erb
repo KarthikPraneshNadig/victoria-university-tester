@@ -24,7 +24,29 @@
 
 <div class="chatbox">
         <div class="chatlogs">
+        <div class="chatbox">
+        <div class="panel-heading">
+        <%= link_to conversation.opposed_user(user).email, '', class: 'toggle-window' %>
+        <%= link_to "x", close_conversation_path(conversation), class: "btn btn-default btn-xs pull-right", remote: true, method: :post %>
+        <div class="chatlogs">
 
+            <div class="chat friend">
+                <div class="user-photo"> <img src="images/1.jpg"></div>
+                <p class="chat-message">Whats up...Bro</p>
+            </div>
+            <div class="chat self">
+                <div class="user-photo"><img src="images/2.jpg"> </div>
+                <p class="chat-message">Nothing Much</p>
+            </div>
+
+
+
+        </div>
+        <div class="chat-form">
+            <textarea name="body" class="form-control"></textarea>
+            <input type="submit" class="btn btn-success" value="Send">
+        </div>
+    </div>
             <div class="chat friend">
                 <div class="user-photo"> <img src="images/1.jpg"></div>
                 <p class="chat-message">Whats up...Bro</p>

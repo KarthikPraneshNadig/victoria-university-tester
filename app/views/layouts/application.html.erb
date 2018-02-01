@@ -14,9 +14,7 @@
   <body>
 
 
-<%# RUBY CODE DO NOT TOUCH - NEEDED FOR DEVISE%>
 
-<%# DO NOT TOUCH CODE RIGHT ABOVE THIS COMMENT IT IS CRITICAL FOR  DEVISE LOGIN -%>
 
 
 <%# do not remove yield this is where the layout switches to the page it is in.%>
@@ -82,19 +80,21 @@
              <li><a href="/contact">Social Media</a></li>
            </ul>
          </li>
-       <li><a href="#"><span class="glyphicon glyphicon-user"></span> Interested in Vic University?</a></li> 
+       <li><a href="#"><span class="glyphicon glyphicon-user"></span> Interested in Vic University?</a></li>
        <%# above will link to form for people to indicate intrest and send their info below will send to vicrit moogle or w.e%>
        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
      </ul>
    </div>
  </nav>
 
+ <%# RUBY CODE DO NOT TOUCH - NEEDED FOR DEVISE%>
  <%if notice %>
   <p class= "alert alert_success"><%=notice %> </p>
 <% end %>
 <% if alert %>
   <p class ="alert alert-danger"> <%=alert %> </p>
 <% end %>
+<%# DO NOT TOUCH CODE RIGHT ABOVE THIS COMMENT IT IS CRITICAL FOR  DEVISE LOGIN -%>
 
 
 
