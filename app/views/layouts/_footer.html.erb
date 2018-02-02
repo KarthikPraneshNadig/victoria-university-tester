@@ -1,13 +1,16 @@
 <p>HERE BE THE FOOTER __________________ </p>
  
 <% if user_signed_in? %>
-  <div class="row">
-  <div class="col-md-9">
-    <ul id="conversations-list">
+  <div class="convoboxes">
+    <div class="col-md-9">
+     <ul class="conversations-list">
       <% @conversations.each do |conversation| %>
-        <%= render 'conversations/conversation', conversation: conversation, user: current_user %>
+        <%= render 'conversations/conversation',  user: current_user , conversation: conversation%>
       <% end %>
     </ul>
   </div>
 
 <% end %>
+
+
+<%# the conversations list div is the div that opens a new window and creates a element%>

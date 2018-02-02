@@ -12,13 +12,7 @@
 give the element a class name and its going to have to be adjusted work well.
 only YOMI will see all the users and multiple conversation windows.
 
-li {
-display: inline-block;
-width: 33%;
-}
-
 */
-
 
 ul {
   padding-left: 0px;
@@ -62,12 +56,30 @@ ul {
   color: white;
 }
 
-.userpanel {
-  width: 20%;
+.userpanel > .col-md-3 {
+  width: 30%;
   height: 80%;
   border: 1px solid blue;
+  align-content: center;
+  position: fixed;
+  right: 0px;
 }
 
-.userpanel > .col-md-3 {
+
+.adminlogin {
+  background-color: white
+}
+
+.conversations-list {
+  position: fixed;
+  width:30%;
+  length:30%;
+  bottom:0;  
+}
+
+.admincontrol {
+  background-color: black;
+  position: fixed;
+  top: 0;
   width: 100%;
 }

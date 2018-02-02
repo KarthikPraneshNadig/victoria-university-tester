@@ -100,14 +100,18 @@
 
 
 <%= render :partial => "layouts/header" %>
+<%# layouts/header allows for the admin bar to render%>
 
 
 <%= yield %>
 
 
-<%= render :partial => "layouts/footer" %>
-<%= render :partial => 'layouts/userpanel'%>
 
+
+<%= render :partial => 'layouts/userpanel'%>
+<%# moving layouts /userpanel will change where the admin sees the userpanel in relation to other elements%>
+<%= render :partial => "layouts/footer" %>
+<%# moving layouts / footer will mess with chatbox layout overall#>
 
 
 
