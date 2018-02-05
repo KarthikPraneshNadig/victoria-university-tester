@@ -1,15 +1,16 @@
 <p>HERE BE THE FOOTER __________________ </p>
  
 <% if user_signed_in? %>
-  <div class="convoboxes">
-    <div class="col-md-9">
-     <ul class="conversations-list">
-      <% @conversations.each do |conversation| %>
-        <%= render 'conversations/conversation',  user: current_user , conversation: conversation%>
-      <% end %>
-    </ul>
+  <div class "convoboxes">  
+    <div class="row"> 
+      <div class="col-md-9">
+      <ul class="conversations-list">
+       <% @conversations.each do |conversation| %>
+         <%= render 'conversations/conversation',  user: current_user , conversation: conversation%>
+        <% end %>
+      </ul>
+    </div>
   </div>
-
 <% end %>
 
 
